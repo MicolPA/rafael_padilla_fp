@@ -201,7 +201,8 @@ class Registrar extends CI_Controller {
 			}
 
 			
-			header("Location: $this_url");
+			redirect($this_url);
+			return;
 		}
 
  		$this->load->view('home/plantilla', $data);

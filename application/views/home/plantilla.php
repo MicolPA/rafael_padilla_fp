@@ -90,24 +90,21 @@
 	<script src="<?php echo base_url('assets/js/fontawesome.min.js') ?>"></script>
 	<script type="text/javascript" src="<?= base_url('assets/DataTable/datatables.min.js') ?>"></script>
 
-    <?php if ($this->session->flashdata('alert')): ?>
-	<?php $alert = $this->session->flashdata('alert') ?>
+	<?php if ($alert = $this->session->flashdata('alert')): ?>
 	<script>
-		swal("Alerta", "<?= $alert ?>", "warning");
+		swal("Alerta", <?= json_encode($alert) ?>, "warning");
 	</script>	
 	<?php endif ?>
 
-	<?php if ($this->session->flashdata('success')): ?>
-	<?php $alert = $this->session->flashdata('success') ?>
+	<?php if ($alert = $this->session->flashdata('success')): ?>
 	<script>
-		swal("Correcto", "<?= $alert ?>", "success");
+		swal("Correcto", <?= json_encode($alert) ?>, "success");
 	</script>	
 	<?php endif ?>
 
-	<?php if ($this->session->flashdata('error')): ?>
-	<?php $alert = $this->session->flashdata('error') ?>
+	<?php if ($alert = $this->session->flashdata('error')): ?>
 	<script>
-		swal("Error", "<?= $alert ?>", "error");
+		swal("Error", <?= json_encode($alert) ?>, "error");
 	</script>	
 	<?php endif ?>
 	<style>

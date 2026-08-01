@@ -16,7 +16,7 @@
 		</div>
 		<div class="col-md-7 pt-md-4 pt-sm-0 mt-4 pl-4 hide_cel">
 			<h1 class="text-success font-weight-bold display-3">Rafael Padilla</h1>
-			<p class="h3">Proyecto Rafael Padilla Diputado <span class="bg-success px-2 text-white rounded">2024-2028</span></p>
+			<p class="h3">Proyecto Rafael Padilla Diputado <span class="bg-success px-2 text-white rounded">2026-2030</span></p>
 			<img class='mt-3' src="<?= base_url('assets/images/logo-fp-3.png') ?>" alt="Fuerza del Pueblo" width='30%'>
 			<div class="w-100 mt-4 pt-4">
 	  			<?php if (!isset($_SESSION['user'])): ?>

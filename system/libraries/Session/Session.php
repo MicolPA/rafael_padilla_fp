@@ -415,9 +415,9 @@ class CI_Session {
 				{
 					$_SESSION['__ci_vars'][$key] = 'old';
 				}
-				// Hacky, but 'old' will (implicitly) always be less than time() ;)
-				// DO NOT move this above the 'new' check!
-				elseif ($value < $current_time)
+				// Explicitly handle "old" for PHP 8+, where comparing a
+				// non-numeric string with an integer no longer removes it.
+				elseif ($value === 'old' OR $value < $current_time)
 				{
 					unset($_SESSION[$key], $_SESSION['__ci_vars'][$key]);
 				}
