@@ -1,0 +1,238 @@
+:root {
+	--campaign-green: #008f46;
+	--campaign-green-dark: #006f37;
+	--campaign-ink: #111827;
+	--campaign-muted: #5d6878;
+}
+
+.campaign-home {
+	background: #f5f8f5;
+	min-height: calc(100vh - 70px);
+	padding: 12px;
+}
+
+.campaign-hero {
+	background-color: #f7fbf7;
+	background-image: url('../images/hero/fp-hero-background.png');
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #e1e9e3;
+	border-bottom: 7px solid var(--campaign-green);
+	border-radius: 13px;
+	box-shadow: 0 5px 20px rgba(9, 65, 37, .08);
+	height: min(720px, calc(100vh - 95px));
+	margin: 0 auto;
+	max-width: 1440px;
+	min-height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+.campaign-copy {
+	left: 7.5%;
+	max-width: 470px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+
+.campaign-kicker {
+	align-items: center;
+	color: var(--campaign-green-dark);
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.campaign-kicker strong {
+	border: 1px solid #72c79a;
+	border-radius: 6px;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 4px 10px;
+	white-space: nowrap;
+}
+
+.campaign-copy h1 {
+	font-size: clamp(58px, 6vw, 88px);
+	font-weight: 700;
+	letter-spacing: -3px;
+	line-height: .92;
+	margin: 0;
+}
+
+.campaign-copy h1 span,
+.campaign-copy h1 strong {
+	display: block;
+}
+
+.campaign-copy h1 span {
+	color: var(--campaign-ink);
+}
+
+.campaign-copy h1 strong {
+	color: var(--campaign-green);
+	font-weight: 700;
+}
+
+.campaign-rule {
+	background: var(--campaign-green);
+	height: 4px;
+	margin: 22px 0 18px;
+	width: 38px;
+}
+
+.campaign-party {
+	border-left: 4px solid var(--campaign-green);
+	color: var(--campaign-ink);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1;
+	margin: 0 0 20px;
+	padding-left: 14px;
+}
+
+.campaign-message {
+	color: var(--campaign-muted);
+	font-size: 16px;
+	line-height: 1.55;
+	margin: 0 0 28px;
+	max-width: 330px;
+}
+
+.campaign-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 310px;
+}
+
+.campaign-btn {
+	align-items: center;
+	border-radius: 6px;
+	display: flex;
+	font-size: 14px;
+	font-weight: 600;
+	gap: 10px;
+	justify-content: flex-start;
+	min-height: 48px;
+	padding: 12px 16px;
+	text-decoration: none;
+	transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.campaign-btn:hover {
+	text-decoration: none;
+	transform: translateY(-1px);
+}
+
+.campaign-btn-primary {
+	background: var(--campaign-green);
+	box-shadow: 0 5px 12px rgba(0, 143, 70, .19);
+	color: #fff;
+}
+
+.campaign-btn-primary:hover { background: var(--campaign-green-dark); color: #fff; }
+.campaign-btn-secondary { background: rgba(255, 255, 255, .82); border: 1px solid #aebbc3; color: var(--campaign-ink); }
+.campaign-btn-secondary:hover { border-color: var(--campaign-green); color: var(--campaign-green-dark); }
+.campaign-btn-arrow { margin-left: auto; }
+
+.campaign-btn-whatsapp {
+	background: linear-gradient(135deg, #25d366, #0da64a);
+	border: 2px solid rgba(255, 255, 255, .9);
+	border-radius: 9px;
+	box-shadow: 0 9px 24px rgba(13, 166, 74, .34), 0 0 0 4px rgba(37, 211, 102, .13);
+	color: #fff;
+	min-height: 62px;
+	padding: 9px 13px;
+	position: relative;
+}
+
+.campaign-btn-whatsapp:hover {
+	box-shadow: 0 12px 28px rgba(13, 166, 74, .44), 0 0 0 5px rgba(37, 211, 102, .16);
+	color: #fff;
+	transform: translateY(-2px) scale(1.01);
+}
+
+.campaign-btn-whatsapp > span:nth-child(2) { display: flex; flex-direction: column; line-height: 1.2; }
+.campaign-btn-whatsapp strong { font-size: 13px; }
+.campaign-btn-whatsapp small { color: rgba(255, 255, 255, .88); font-size: 9px; font-weight: 500; margin-top: 3px; }
+.campaign-whatsapp-icon { align-items: center; background: #fff; border-radius: 50%; color: #14ad50; display: flex; font-size: 21px; height: 38px; justify-content: center; min-width: 38px; }
+
+.campaign-person {
+	bottom: -3px;
+	height: 96%;
+	position: absolute;
+	right: 5%;
+	width: 56%;
+	z-index: 2;
+}
+
+.campaign-person img {
+	display: block;
+	height: 100%;
+	margin-left: auto;
+	max-width: 100%;
+	object-fit: contain;
+	object-position: bottom right;
+}
+
+@media (max-width: 991px) {
+	.campaign-hero { min-height: 620px; }
+	.campaign-copy { left: 5%; max-width: 390px; }
+	.campaign-person { right: -8%; width: 66%; }
+	.campaign-copy h1 { font-size: 62px; }
+}
+
+@media (max-width: 767px) {
+	.campaign-home { background: #fff; padding: 8px; }
+	.campaign-hero {
+		background-position: 61% center;
+		border-radius: 11px;
+		height: calc(100vh - 88px);
+		min-height: 650px;
+	}
+
+	.campaign-copy {
+		left: 18px;
+		max-width: 58%;
+		top: 28px;
+		transform: none;
+	}
+
+	.campaign-kicker {
+		align-items: flex-start;
+		flex-direction: column;
+		font-size: 11px;
+		gap: 5px;
+		margin-bottom: 14px;
+	}
+
+	.campaign-kicker strong { font-size: 10px; padding: 3px 7px; }
+	.campaign-copy h1 { font-size: clamp(39px, 12vw, 52px); letter-spacing: -2px; }
+	.campaign-rule { height: 3px; margin: 14px 0 12px; width: 28px; }
+	.campaign-party { border-left-width: 3px; font-size: 14px; margin-bottom: 13px; padding-left: 9px; }
+	.campaign-message { font-size: 11px; line-height: 1.45; margin-bottom: 16px; max-width: 175px; }
+	.campaign-actions { gap: 8px; width: min(245px, 88vw); }
+	.campaign-btn { font-size: 11px; min-height: 42px; padding: 9px 12px; }
+	.campaign-btn-whatsapp { min-height: 58px; padding: 8px 10px; }
+	.campaign-btn-whatsapp strong { font-size: 11px; }
+	.campaign-btn-whatsapp small { font-size: 8px; }
+	.campaign-whatsapp-icon { font-size: 18px; height: 34px; min-width: 34px; }
+
+	.campaign-person {
+		bottom: 0;
+		height: 72%;
+		right: -29%;
+		width: 105%;
+	}
+}
+
+@media (max-width: 390px) {
+	.campaign-copy { max-width: 64%; }
+	.campaign-person { right: -36%; width: 112%; }
+	.campaign-actions { width: 210px; }
+}

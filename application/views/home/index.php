@@ -1,33 +1,54 @@
+<link rel="stylesheet" href="<?= base_url('assets/css/home-hero.css?v=3') ?>">
 
-<div class="container">
-	<div class="row align-items-center pb-2">
-		<div class="col-sm-12 d-md-none d-lg-none pt-md-4 pt-sm-0 div_texto_inicio">
-			<h1 class="text-success font-weight-bold h4">Rafael Padilla (ADI)</h1>
-			<p class="">Movimiento Acción Dominicana Inmediata.</p>
-			<?php if (!isset($_SESSION['user'])): ?>
-  			<a class="btn btn-success btn-lg btn-block" href="<?php echo base_url('/auth/login') ?>">¡Registra a tu gente!</a>
-  			<a class="btn btn-outline-success btn-lg mb-2 btn-block" href="<?php echo base_url('/auth/registro') ?>">Regístrate como Coordinador</a>	
-  			<?php else: ?>
-  			<a class="btn btn-success btn-lg mb-2 btn-block" href="<?php echo base_url('/registrar/subcoordinador') ?>">¡Registra a tu gente!</a>	
-  			<?php endif ?>
-		</div>
-		<div class="col-md-5">
-			<img src="<?= base_url('assets/images/rafael-padilla-2.jpg') ?>" alt="Rafael Padilla" width='100%'>
-		</div>
-		<div class="col-md-7 pt-md-4 pt-sm-0 mt-4 pl-4 hide_cel">
-			<h1 class="text-success font-weight-bold display-3">Rafael Padilla</h1>
-			<p class="h3">Proyecto Rafael Padilla Diputado <span class="bg-success px-2 text-white rounded">2026-2030</span></p>
-			<img class='mt-3' src="<?= base_url('assets/images/logo-fp-3.png') ?>" alt="Fuerza del Pueblo" width='30%'>
-			<div class="w-100 mt-4 pt-4">
-	  			<?php if (!isset($_SESSION['user'])): ?>
-	  			<a class="btn btn-success btn-lg" href="<?php echo base_url('/auth/login') ?>">¡Registra a tu gente!</a>
-	  			<a class="btn btn-outline-success btn-lg" href="<?php echo base_url('/auth/registro') ?>">Regístrate como Coordinador</a>
-	  			<?php else: ?>
-	  			<a class="btn btn-success btn-lg" href="<?php echo base_url('/registrar/subcoordinador') ?>">¡Registra a tu gente!</a>	
-	  			<?php endif ?>
+<main class="campaign-home">
+	<section class="campaign-hero" aria-labelledby="campaign-title">
+		<div class="campaign-copy">
+			<div class="campaign-kicker">
+				<span>Proyecto Rafael Padilla Diputado</span>
+				<strong>2026-2030</strong>
+			</div>
+
+			<h1 id="campaign-title">
+				<span>Rafael</span>
+				<strong>Padilla</strong>
+			</h1>
+
+			<div class="campaign-rule" aria-hidden="true"></div>
+			<p class="campaign-party">Fuerza del Pueblo</p>
+			<p class="campaign-message">Juntos construyendo un mejor futuro para nuestra gente.</p>
+
+			<div class="campaign-actions">
+				<a class="campaign-btn campaign-btn-whatsapp" href="https://wa.me/18094966220?text=Hola%20Rafael%20Padilla%2C%20quiero%20ponerme%20en%20contacto%20con%20usted." target="_blank" rel="noopener noreferrer">
+					<span class="campaign-whatsapp-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></span>
+					<span><strong>Contactar a Rafael Padilla</strong><small>Escríbele directamente por WhatsApp</small></span>
+					<i class="fas fa-chevron-right campaign-btn-arrow" aria-hidden="true"></i>
+				</a>
+				<?php if (!isset($_SESSION['user'])): ?>
+				<a class="campaign-btn campaign-btn-primary" href="<?= base_url('auth/login') ?>">
+					<i class="fas fa-user-plus" aria-hidden="true"></i>
+					¡Registra a tu gente!
+					<i class="fas fa-chevron-right campaign-btn-arrow" aria-hidden="true"></i>
+				</a>
+				<a class="campaign-btn campaign-btn-secondary" href="<?= base_url('auth/registro') ?>">
+					<i class="fas fa-user-check" aria-hidden="true"></i>
+					Regístrate como Coordinador
+				</a>
+				<?php else: ?>
+				<a class="campaign-btn campaign-btn-primary" href="<?= base_url('registrar/subcoordinador') ?>">
+					<i class="fas fa-user-plus" aria-hidden="true"></i>
+					¡Registra a tu gente!
+					<i class="fas fa-chevron-right campaign-btn-arrow" aria-hidden="true"></i>
+				</a>
+				<a class="campaign-btn campaign-btn-secondary" href="<?= base_url('registrar') ?>">
+					<i class="fas fa-list" aria-hidden="true"></i>
+					Ver mis registrados
+				</a>
+				<?php endif ?>
 			</div>
 		</div>
 
-	</div>
-</div>
-
+		<div class="campaign-person" aria-hidden="true">
+			<img src="<?= base_url('assets/images/hero/padilla-cutout.png?v=2') ?>" alt="">
+		</div>
+	</section>
+</main>
