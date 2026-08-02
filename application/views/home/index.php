@@ -9,8 +9,8 @@
 			</div>
 
 			<h1 id="campaign-title">
-				<span>Rafael</span>
-				<strong>Padilla</strong>
+				<span>Rafael Padilla</span>
+				<strong>Diputado</strong>
 			</h1>
 
 			<div class="campaign-rule" aria-hidden="true"></div>

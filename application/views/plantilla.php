@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title><?= $title ?> | Rafael Padilla (ADY)</title>
+	<title><?= $title ?> | Rafael Padilla Diputado</title>
 
 	<?php $image = isset($image)?$image:'logo.png' ?>
  	 <!-- META TAGS -->
   	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="<?php echo $title ?> | Rafael Padilla" />
-	<meta property="og:site_name" content="Rafael Padilla" />
+	<meta property="og:site_name" content="Rafael Padilla Diputado" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="<?php echo $title ?> | Rafael Padilla" />
 	<meta property="og:image" content="<?php echo base_url('assets/images/rafael-padilla-2.jpg') ?>" />
