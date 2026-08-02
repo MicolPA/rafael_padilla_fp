@@ -5,7 +5,7 @@
 		<div class="campaign-copy">
 			<div class="campaign-kicker">
 				<span>Proyecto Rafael Padilla Diputado</span>
-				<strong>2026-2030</strong>
+				<strong>2028-2032</strong>
 			</div>
 
 			<h1 id="campaign-title">
