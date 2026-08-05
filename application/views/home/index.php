@@ -48,7 +48,7 @@
 		</div>
 
 		<div class="campaign-person" aria-hidden="true">
-			<img src="<?= base_url('assets/images/hero/padilla-cutout.png?v=2') ?>" alt="">
+			<img src="<?= base_url('assets/images/hero/padilla.png') ?>" alt="">
 		</div>
 	</section>
 </main>
